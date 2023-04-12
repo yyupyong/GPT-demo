@@ -4,6 +4,14 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/chat_model.dart';
 
+class ChatNotiofier extends StateNotifier {
+  ChatNotiofier() : super([]);
+
+  void addUserMessage({required String msg}) {
+    state = [...state, ChatModel(msg: msg, chatIndex: 0)];
+  }
+}
+
 class ChatProvider with ChangeNotifier {
   List<ChatModel> chatList = [];
   List<ChatModel> get getList {
