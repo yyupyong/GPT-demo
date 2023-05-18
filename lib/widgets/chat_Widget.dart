@@ -29,14 +29,14 @@ class ChatWidget extends StatelessWidget {
                   height: 30,
                   width: 30,
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: ),
                 Expanded(
                   child: chatIndex == 0
                       ? TextWidget(label: message)
                       : DefaultTextStyle(
                           style: const TextStyle(
                               color: Colors.white,
-                              fontSize: 16,
+                              fontSize: 24,
                               fontWeight: FontWeight.bold),
                           child: AnimatedTextKit(
                             isRepeatingAnimation: false,
