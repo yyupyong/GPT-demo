@@ -29,7 +29,7 @@ class ChatWidget extends StatelessWidget {
                   height: 30,
                   width: 30,
                 ),
-                const SizedBox(width: ),
+                const SizedBox(width: 24),
                 Expanded(
                   child: chatIndex == 0
                       ? TextWidget(label: message)
